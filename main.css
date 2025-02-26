@@ -1,0 +1,7 @@
+::-webkit-scrollbar,
+#rcnt ~ * {
+  display: none
+}
+a {
+  display: contents
+}

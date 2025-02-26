@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "boost-google",
+  "version": "0",
+  "description": "Boost google search",
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [{
+    "css": ["main.css"],
+    "js": ["main.js"],
+    "matches": ["https://www.google.com/search*"],
+    "world": "MAIN",
+    "run_at": "document_start"
+  }]
+}

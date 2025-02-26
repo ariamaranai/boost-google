@@ -1,0 +1,1 @@
+Image = XMLHttpRequest = 0;
