@@ -1,7 +1,18 @@
-::-webkit-scrollbar,
-#rcnt ~ * {
-  display: none
-}
 a {
   display: contents
+}
+::-webkit-scrollbar,
+#rcnt ~ *,
+.wYq63b,
+h1 {
+  display: none !important
+}
+.SJajHc {
+  display: none !important;
+  background: unset !important
+}
+[jsname="TeSSVd"] {
+  display: flex;
+  gap: 8px;
+  font-size: 32px
 }
