@@ -24,6 +24,7 @@ Object.defineProperty(Image.prototype, "src", {
       case "copy":
       case "dblclick":
       case "error":
+      case "drag":
       case "dragend":
       case "dragenter":
       case "dragleave":
@@ -45,7 +46,6 @@ Object.defineProperty(Image.prototype, "src", {
       case "orientationchange":
       case "scroll":
       case "selectionchange":
-      case "pagehide":
       case "paste":
       case "pointerdown":
       case "pointerenter":
@@ -80,3 +80,6 @@ Object.defineProperty(Image.prototype, "src", {
     is(a) && rel.call(this, a, b ,c);
   }
 }
+HTMLHeadElement.prototype.appendChild = a =>
+  a?.src != "//www.youtube.com/iframe_api?version=3" &&
+  document.head.insertBefore(a, null);
