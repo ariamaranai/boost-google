@@ -1,1 +1,3 @@
-Image = 0;
+HTMLBodyElement.prototype.appendChild = a =>
+  a.tagName != "SCRIPT" &&
+  document.body.insertBefore(a, null);

@@ -1,20 +1,10 @@
-a {
-  display: contents
-}
 ::-webkit-scrollbar,
-#rcnt ~ *,
-.wYq63b,
-.logo,
-.XDyW0e,
-h1 {
+#bres,
+#mlogo,
+#tvcap,
+.SJajHc {
   display: none !important
 }
-.SJajHc {
-  display: none !important;
-  background: unset !important
-}
-[jsname="TeSSVd"] {
-  display: flex;
-  gap: 8px;
-  font-size: 32px
+.NKTSme {
+  width: 20px
 }
