@@ -2,17 +2,32 @@
 #_ljkiaLPqMufg2roP-Zef8Ag_1,
 #bres,
 #mlogo,
-#tvcap,
 #sfooter,
+#tvcap,
+#kp-wp-tab-overview > :last-child,
 .SJajHc,
 .logo,
 .XDyW0e,
 .nDcEnd,
+.T7Ko6,
+.SF7xd,
+.eFM0qc.BCF2pd,
 .ACRAdd.M2vV3,
+.C7GK8b.vza2Ib.ApHyTb,
 .HZVG1b.Tg7LZd,
+.fBTYMc.oL4XVe.Xdpf2,
 h1 {
   display: none !important
 }
+#hdtbMenus {
+  display: grid !important;
+  top: 7px;
+  height: 22px;
+  padding-bottom: 7px
+}
 .NKTSme {
   width: 20px
+}
+a {
+  display: contents
 }
