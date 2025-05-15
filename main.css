@@ -6,7 +6,6 @@
 #sfooter,
 #eRsUse,
 #tvcap,
-#kp-wp-tab-overview > :last-child,
 .SJajHc,
 .logo,
 .XDyW0e,
@@ -32,6 +31,6 @@ h1 {
 .NKTSme {
   width: 20px
 }
-a {
+a, cite {
   display: contents
 }
