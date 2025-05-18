@@ -1,10 +1,6 @@
 Object.defineProperties(navigator, {
-  sendBeacon: {
-    value: () => 0
-  },
-  userAgent: {
-    value: ""
-  }
+  sendBeacon: { value: () => 0 },
+  userAgent: { value: "" }
 });
 Object.defineProperty(Image.prototype, "src", {
   set (a) {
@@ -81,5 +77,5 @@ Object.defineProperty(Image.prototype, "src", {
   }
 }
 HTMLHeadElement.prototype.appendChild = a =>
-  a?.src != "//www.youtube.com/iframe_api?version=3" &&
+  a?.src != "https://www.youtube.com/iframe_api?version=3" &&
   document.head.insertBefore(a, null);
