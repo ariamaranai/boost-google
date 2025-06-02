@@ -2,7 +2,6 @@
 #_ljkiaLPqMufg2roP-Zef8Ag_1,
 #appbar,
 #before-appbar,
-#bres,
 /*#lb, カレンダー*/
 #mlogo,
 #result-stats,
@@ -28,7 +27,6 @@
 h1 {
   display: none !important
 }
-
 #hdtbMenus {
   display: grid !important;
   top: 8px;
@@ -38,7 +36,7 @@ h1 {
 .NKTSme {
   width: 20px
 }
-a,
+:any-link,
 cite {
   display: contents
 }
