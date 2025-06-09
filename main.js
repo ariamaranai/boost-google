@@ -26,7 +26,7 @@ Object.defineProperty(Image.prototype, "src", {
       case "dragover":
       case "dragstart":
       case "drop":
-      case "focus":
+      // case "focus": calendar
       case "focusin":
       case "focusout":
       case "keypress":
