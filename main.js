@@ -4,7 +4,7 @@ Object.defineProperties(navigator, {
 });
 Object.defineProperty(Image.prototype, "src", {
   set (a) {
-    (a[0] == "d" || a[1] == "/" || a.slice(11, 19) != ".google.") &&
+    (a[0] == "d" || a[1] == "/" || !(a[11] == "." && a[12] == "g" && a[13] == "o" && a[14] == "o" && a[15] == "g" && a[16] == "l" && a[17] == "e" && a[18] == ".")) &&
     this.setAttribute("src", a);
   }
 });
