@@ -4,7 +4,7 @@ Object.defineProperties(navigator, {
 });
 Object.defineProperty(Image.prototype, "src", {
   set (a) {
-    return a.startsWith("d/") && !a.startsWith(".google.", 11) && this.setAttribute("src", a);
+    return (a.startsWith("d") || a.startsWith("/", 1) || !a.startsWith(".google.", 11)) && this.setAttribute("src", a);
   }
 });
 {
