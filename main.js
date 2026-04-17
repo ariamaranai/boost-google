@@ -65,13 +65,13 @@ Object.defineProperty(Image.prototype, "src", {
     }
   }
   let p = EventTarget.prototype;
-  let ael = p.addEventListener;
-  let rel = p.removeEventListener;
+  let _addEventListener = p.addEventListener;
+  let _removeEventListener = p.removeEventListener;
   p.addEventListener = function (a, b, c) {
-    return is(a) && ael.call(this, a, b ,c);
+    return is(a) && _addEventListener.call(this, a, b ,c);
   }
   EventTarget.prototype.removeEventListener = function (a, b, c) {
-    return is(a) && rel.call(this, a, b ,c);
+    return is(a) && _removeEventListener.call(this, a, b ,c);
   }
 }
 HTMLHeadElement.prototype.appendChild = a =>
