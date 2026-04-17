@@ -4,8 +4,7 @@ Object.defineProperties(navigator, {
 });
 Object.defineProperty(Image.prototype, "src", {
   set (a) {
-    (a[0] == "d" || a[1] == "/" || !(a[11] == "." && a[12] == "g" && a[13] == "o" && a[14] == "o" && a[15] == "g" && a[16] == "l" && a[17] == "e" && a[18] == ".")) &&
-    this.setAttribute("src", a);
+    return a.startsWith("d/") && a.startsWith(".google.", 11) && this.setAttribute("src", a);
   }
 });
 {
@@ -69,10 +68,10 @@ Object.defineProperty(Image.prototype, "src", {
   let ael = p.addEventListener;
   let rel = p.removeEventListener;
   p.addEventListener = function (a, b, c) {
-    is(a) && ael.call(this, a, b ,c);
+    return is(a) && ael.call(this, a, b ,c);
   }
   EventTarget.prototype.removeEventListener = function (a, b, c) {
-    is(a) && rel.call(this, a, b ,c);
+    return is(a) && rel.call(this, a, b ,c);
   }
 }
 HTMLHeadElement.prototype.appendChild = a =>
